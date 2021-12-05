@@ -127,3 +127,21 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Colcon
+build/
+install/
+log/
+
+# ROS
+.idea/
+
+# models
+*.prototxt
+*.caffemodel
+
+# stats
+*.csv
+*.stats.json
+*.manifest.json
+*.zip

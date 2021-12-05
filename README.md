@@ -1,2 +1,2 @@
-# ros2_turtlebot
-ROS2 Turtlebot 
+# ROS2 Turtlebot
+Integrate OpenAI Baselines & Genetic Algorithm PID tunner into ROS2 Turtlebot

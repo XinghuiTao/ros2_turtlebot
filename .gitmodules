@@ -1,0 +1,20 @@
+[submodule "src/turtlebot/turtlebot3"]
+	path = src/turtlebot/turtlebot3
+	url = https://github.com/ROBOTIS-GIT/turtlebot3
+	branch = foxy-devel
+[submodule "src/turtlebot/turtlebot3_msgs"]
+	path = src/turtlebot/turtlebot3_msgs
+	url = https://github.com/ROBOTIS-GIT/turtlebot3_msgs
+	branch = foxy-devel
+[submodule "src/turtlebot/turtlebot3_simulations"]
+	path = src/turtlebot/turtlebot3_simulations
+	url = https://github.com/ROBOTIS-GIT/turtlebot3_simulations
+	branch = foxy-devel
+[submodule "src/utils/DynamixelSDK"]
+	path = src/utils/DynamixelSDK
+	url = https://github.com/ROBOTIS-GIT/DynamixelSDK
+	branch = foxy-devel
+[submodule "src/utils/hls_lfcd_lds_driver"]
+	path = src/utils/hls_lfcd_lds_driver
+	url = https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver
+	branch = foxy-devel

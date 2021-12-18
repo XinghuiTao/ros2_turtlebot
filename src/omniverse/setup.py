@@ -25,7 +25,9 @@ setup(
         'console_scripts': [
             'bootstrap = omniverse.bootstrap:main',
             'service = omniverse.service:main',
-            'client = omniverse.client:main'
+            'client = omniverse.client:main',
+            'move_service = omniverse.move_service:main',
+            'move_client = omniverse.move_client:main',
         ],
     },
 )

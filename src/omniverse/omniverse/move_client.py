@@ -1,19 +1,21 @@
-from std_srvs.srv import Empty
+from interfaces.srv import Move
 import rclpy
 from rclpy.node import Node
+import sys
 
 
 class Client(Node):
     def __init__(self):
         super().__init__('client')
-        self.client = self.create_client(Empty, 'moving')
+        self.client = self.create_client(Move, 'movement')
         while not self.client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('service not available, waiting again...')
         
-        self.req = Empty.Request()
+        self.req = Move.Request()
         
 
     def send_request(self):
+        self.req.move = sys.argv[1]
         self.future = self.client.call_async(self.req)
 
 
@@ -32,7 +34,7 @@ def main(args=None):
                     'Service call failed %r' % (e,))
             else:
                 client.get_logger().info(
-                    'the robot is moving' ) 
+                    'Response state %r' % (response.success,))
             break
 
     client.destroy_node()

@@ -24,7 +24,8 @@ setup(
     entry_points={
         'console_scripts': [
             'bootstrap = omniverse.bootstrap:main',
-            'client= omniverse.client:main'
+            'service = omniverse.service:main',
+            'client = omniverse.client:main'
         ],
     },
 )

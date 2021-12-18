@@ -23,7 +23,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'bootstrap = omniverse.bootstrap:main'
+            'bootstrap = omniverse.bootstrap:main',
+            'client_async = omniverse.client_async:main'
         ],
     },
 )

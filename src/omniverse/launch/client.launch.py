@@ -5,6 +5,6 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='omniverse',
-            executable='client_async',
+            executable='client',
             output='screen'),
     ])

@@ -3,10 +3,10 @@ import rclpy
 from rclpy.node import Node
 
 
-class ClientAsync(Node):
+class Client(Node):
 
     def __init__(self):
-        super().__init__('client_async')
+        super().__init__('client')
         self.client = self.create_client(Empty, 'moving')
         while not self.client.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('service not available, waiting again...')
@@ -20,7 +20,7 @@ class ClientAsync(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    client = ClientAsync()
+    client = Client()
     client.send_request()
 
     while rclpy.ok():

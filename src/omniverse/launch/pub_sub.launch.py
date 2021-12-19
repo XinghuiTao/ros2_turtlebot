@@ -5,6 +5,6 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='omniverse',
-            executable='move_service',
+            executable='pub_sub',
             output='screen'),
     ])

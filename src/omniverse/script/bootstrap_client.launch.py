@@ -5,6 +5,6 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='omniverse',
-            executable='bootstrap',
+            executable='bootstrap_client',
             output='screen'),
     ])

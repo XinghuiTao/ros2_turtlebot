@@ -13,7 +13,6 @@ class Client(Node):
         
         self.req = Move.Request()
         
-
     def send_request(self):
         self.req.move = sys.argv[1]
         self.future = self.client.call_async(self.req)

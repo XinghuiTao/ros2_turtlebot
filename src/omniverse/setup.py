@@ -23,11 +23,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'bootstrap = omniverse.bootstrap:main',
-            'service = omniverse.service:main',
-            'client = omniverse.client:main',
-            'move_service = omniverse.move_service:main',
-            'move_client = omniverse.move_client:main',
+            'pub_sub = omniverse.pub_sub:main',
+            'service_server = omniverse.service_server:main',
+            'service_client = omniverse.service_client:main'
         ],
     },
 )
